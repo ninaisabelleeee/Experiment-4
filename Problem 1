@@ -1,0 +1,137 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int add(int num1, int num2)
+{
+	int a;
+	a = num1+num2;
+	return a;
+}
+
+int sub(int num1,int num2)
+{
+	int s;
+	s = num1-num2;
+	return s;
+}
+
+int mul(int num1,int num2)
+{
+	int m;
+	m = num1*num2;
+	return m;
+}
+
+double div(int num1,int num2)
+{
+	int d;
+	d = num1 / num2;
+	return d;
+}
+
+double mod(int num1,int num2)
+{
+	int mod;
+	mod = num1 % num2;
+	return mod;
+}
+
+int main()
+{
+	int choice, num1, num2;
+	char yes;
+		
+		cout << "MENU" "\n";
+		cout << "1. Add" "\n";
+		cout << "2. Subtract" "\n";
+		cout << "3. Multiply" "\n";
+		cout << "4. Divide" "\n";
+		cout << "5. Modulus" "\n";
+
+		cout << "\n";
+
+		cout << "Enter your choice: ";
+		cin >> choice;
+		cout << "Enter two numbers: ";
+		cin >> num1 >> num2;
+
+	switch (choice)
+	{
+		case 1:
+			cout << "Result: " << add(num1,num2) << endl;
+			break;
+		case 2:
+			cout << "Result: " << sub(num1,num2) << endl;
+			break;
+		case 3:
+			cout << "Result: " << mul(num1,num2) << endl;
+			break;
+		case 4:
+			cout << "Result: " << div(num1,num2) << endl;
+			break;
+		case 5:
+			cout << "Result: " << mod(num1,num2) << endl;
+			break;
+	}
+
+	cout << "\n";
+
+	cout << "Press Y to continue " ;
+	cin >> yes;
+	
+	cout << "\n";
+
+	yes = 'y';
+
+	while (yes == 'y' || yes == 'Y')
+	{
+		int choice, num1, num2;
+		char yes;
+		cout << "MENU" "\n";
+		cout << "1. Add" "\n";
+		cout << "2. Subtract" "\n";
+		cout << "3. Multiply" "\n";
+		cout << "4. Divide" "\n";
+		cout << "5. Modulus" "\n";
+
+		cout << "\n";
+
+		cout << "Enter your choice: ";
+		cin >> choice;
+		cout << "Enter two numbers: ";
+		cin >> num1 >> num2;
+
+	switch (choice)
+	{
+		case 1:
+			cout << "Result: " << add(num1,num2) << endl;
+			break;
+		case 2:
+			cout << "Result: " << sub(num1,num2) << endl;
+			break;
+		case 3:
+			cout << "Result: " << mul(num1,num2) << endl;
+			break;
+		case 4:
+			cout << "Result: " << div(num1,num2) << endl;
+			break;
+		case 5:
+			cout << "Result: " << mod(num1,num2) << endl;
+			break;
+	}
+	cout << "\n";
+
+	cout << "Press Y to continue " ;
+	cin >> yes;
+	
+	cout << "\n";
+
+	yes = 'y';
+}
+
+_getch();
+return 0;
+}
